@@ -1,0 +1,14 @@
+# Program to count frequency of each element in a list
+
+arr = [1, 2, 2, 3, 4, 4, 4, 5]  # Sample list
+freq = {}                       # Empty dictionary
+
+for num in arr:
+    if num in freq:
+        freq[num] += 1         # Increase count
+    else:
+        freq[num] = 1          # First time
+
+print("Frequency of each element:")
+for key, value in freq.items():
+    print(key, ":", value)
